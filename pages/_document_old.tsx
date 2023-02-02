@@ -8,7 +8,6 @@ export default function Document() {
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="emotion-insertion-point" content="" />
-          {(this.props as any).emotionStyleTags}
         </Head>
         <body>
           <Main />
