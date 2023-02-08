@@ -3,6 +3,7 @@ import { Box, Grid, Paper } from '@mui/material';
 import ConsumerDetails from './consumerDetails';
 import VendorDetails from './vendorDetails';
 import Pdf from "react-to-pdf";
+import { DescriptionTable } from './descriptionTable';
 
 export default function PdfGenerator() {
     const ref = React.createRef();
@@ -21,6 +22,9 @@ export default function PdfGenerator() {
                         <VendorDetails />
                     </Grid>
                 </Grid>
+                <Box p={3}>
+                    <DescriptionTable description={''} qty={0} kg={0} pc={''}/>
+                </Box>
             </Box>
         </>
     );
