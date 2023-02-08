@@ -4,10 +4,12 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Link from '../utils/Link';
+import PdfGenerator from '../pdfgenerator';
+
 export default function Home() {
   return (
     <Container maxWidth="lg">
-      <Box
+      {/* <Box
         sx={{
           my: 4,
           display: 'flex',
@@ -24,7 +26,8 @@ export default function Home() {
             About
           </Button>
         </Box>
-      </Box>
+      </Box> */}
+      <PdfGenerator/>
     </Container>
   );
 }
